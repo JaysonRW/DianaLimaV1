@@ -223,31 +223,33 @@ export default function App() {
     gsap.ticker.lagSmoothing(0);
 
     const ctx = gsap.context(() => {
-      // 1. Entrada serena e acolhedora da Hero Section
+      // 1. Entrada serena e acolhedora da Hero Section (Blur-in + Deslocamento Vertical Suave)
       gsap.fromTo(
         '.gsap-hero-item',
-        { y: 26, opacity: 0 },
+        { y: 28, opacity: 0, filter: 'blur(10px)' },
         {
           y: 0,
           opacity: 1,
-          duration: 0.9,
-          stagger: 0.12,
+          filter: 'blur(0px)',
+          duration: 1.05,
+          stagger: 0.13,
           ease: 'power3.out',
-          clearProps: 'transform,opacity',
+          clearProps: 'transform,opacity,filter',
         }
       );
 
       gsap.fromTo(
         '.gsap-hero-visual',
-        { y: 32, opacity: 0, scale: 0.98 },
+        { y: 34, opacity: 0, scale: 0.98, filter: 'blur(14px)' },
         {
           y: 0,
           opacity: 1,
           scale: 1,
-          duration: 1.1,
-          delay: 0.2,
+          filter: 'blur(0px)',
+          duration: 1.25,
+          delay: 0.18,
           ease: 'power3.out',
-          clearProps: 'transform,opacity',
+          clearProps: 'transform,opacity,filter',
         }
       );
 
