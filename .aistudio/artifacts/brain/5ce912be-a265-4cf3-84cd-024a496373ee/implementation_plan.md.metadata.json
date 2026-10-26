@@ -1,0 +1,6 @@
+{
+  "summary":  "Plano de implementacao para a nova secao 'Como Funciona a Avaliacao e a Reabilitacao em Casa' com efeito de empilhamento progressivo de cards (Stacked Cards Scroll-Pinning) usando GSAP ScrollTrigger e Lenis Smooth Scroll em tela unica dividida.",
+  "updatedAt":  "2026-10-26T18:44:30.924900024Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
